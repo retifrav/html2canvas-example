@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Boho";
+    src: url("fonts/boho-a-gogo.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "OpenSansSemi";
+    src: url("fonts/opensans-semi.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "OpenSansExtra";
+    src: url("fonts/opensans-extra.ttf") format("opentype");
+}
+
+body {
+    font-family: Verdana;
+    color: #ffffff;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+span.rating-text {
+    font-family: Boho;
+    font-size: 72px;
+}
+span.rating-type {
+    font-family: OpenSansSemi;
+    font-size: 16px;
+}
+div.rating-type{
+    margin-top: 13px;
+}
+span.rating-girl {
+    color: #FF5792;
+}
+span.rating-boy {
+    color: #56B9FF;
+}
+span.rating-expert {
+    color: #DADADA;
+}
+
+span.verdict {
+    font-family: OpenSansExtra;
+    font-size: 24px;
+    color: #121212;
+    letter-spacing: -1px;
+}
+div.verdict {
+    background: repeating-linear-gradient(
+      315deg,
+      #CBCBCB,
+      #CBCBCB 12px,
+      #FEFEFE 12px,
+      #FEFEFE 24px
+    );
+}

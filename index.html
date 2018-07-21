@@ -1,28 +1,42 @@
+<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   
-  <style>
-    div.centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-    }
-</style>
+  <title>test</title>
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  
-  <div class="container centered">
-      <div style="text-align:center;">
-        <h2>Ololo.</h2>
-      </div>
+
+<div style="width:540px; margin:auto; background-color:#121212; display: flex;">
+  <div style="width:360px;">
+      <img class="img-responsive" style="width:100%;" src="images/poster.jpg">
   </div>
-  
+  <div style="width:180px; text-align:center;">
+      <div style="height:468px;">
+          <div style="margin-top: 18px;">
+            <div><span class="rating-text rating-girl">5,4</span></div>
+            <div class="rating-type"><span class="rating-type">женский&nbsp;рейтинг</span></span></div>
+          </div>
+          <div style="margin-top: 20px;">
+            <div><span class="rating-text rating-boy">7,6</span></div>
+            <div class="rating-type"><span class="rating-type">мужской&nbsp;рейтинг</span></div>
+          </div>
+          <div style="margin-top: 20px;">
+            <div><span class="rating-text rating-expert">9,8</span></div>
+            <div class="rating-type"><span class="rating-type">мнение&nbsp;экспертов</span></div>
+          </div>
+      </div>
+      <div class="verdict" style="height:72px; background-color:red; display:flex; align-items:center;">
+        <div style="width:100%;"><span class="verdict">не смотреть!</span></div></div>
+  </div>
+</div>
+
 </body>
 
 </html>
