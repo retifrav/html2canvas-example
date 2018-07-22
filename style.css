@@ -24,6 +24,11 @@ body {
     height: auto;
 }
 
+div.rating-item {
+    width: 142px;
+    height: 122px;
+    margin: auto;
+}
 span.rating-text {
     font-family: Boho;
     font-size: 72px;
@@ -32,7 +37,7 @@ span.rating-type {
     font-family: OpenSansSemi;
     font-size: 16px;
 }
-div.rating-type{
+div.rating-type {
     margin-top: 13px;
 }
 span.rating-girl {
@@ -50,6 +55,7 @@ span.verdict {
     font-size: 24px;
     color: #121212;
     letter-spacing: -1px;
+    line-height: 1
 }
 div.verdict {
     background: repeating-linear-gradient(
