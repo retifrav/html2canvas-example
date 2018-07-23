@@ -9,34 +9,68 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <script src="html2canvas.min.js"></script>
+
 </head>
 
 <body>
 
-<div style="width:540px; margin:auto; background-color:#121212; display:flex;">
+<div id="main">
+<div id="screenshot" style="width:540px; background-color:#121212; display:flex; cursor:pointer;" onclick="makeScreenshot();">
   <div style="width:360px;">
       <img class="img-responsive" style="width:100%;" src="images/poster.jpg">
   </div>
   <div style="width:180px; text-align:center;">
       <div style="height:468px;">
-          <div class="rating-item" style="padding-top:18px;">
+          <div style="padding-top:18px;">
             <div><span class="rating-text rating-girl">5,4</span></div>
-            <div class="rating-type"><span class="rating-type">женский&nbsp;рейтинг</span></span></div>
+            <div class="rating-type">женский&nbsp;рейтинг</div>
           </div>
-          <div class="rating-item" style="margin-top:20px;">
+          <div style="margin-top:20px;">
             <div><span class="rating-text rating-boy">7,6</span></div>
-            <div class="rating-type"><span class="rating-type">мужской&nbsp;рейтинг</span></div>
+            <div class="rating-type">мужской&nbsp;рейтинг</div>
           </div>
-          <div class="rating-item" style="margin-top:20px;">
+          <div style="margin-top:20px;">
             <div><span class="rating-text rating-expert">9,8</span></div>
-            <div class="rating-type"><span class="rating-type">мнение&nbsp;экспертов</span></div>
+            <div class="rating-type">мнение&nbsp;экспертов</div>
           </div>
       </div>
-      <div class="verdict" style="height:72px; display:flex; align-items:center;">
-        <div><span class="verdict">можно смотреть</span></div>
+      <div class="verdict some" style="height:72px; display:flex; align-items:center; justify-content:center;">
+        можно смотреть
       </div>
   </div>
 </div>
+</div>
+
+<script type="text/javascript">   
+
+    function makeScreenshot() {
+        html2canvas(document.getElementById("screenshot"), {scale: 2}).then(canvas => {
+            var main = document.getElementById("main");
+            while (main.firstChild) {
+              main.removeChild(main.firstChild);
+            }
+
+            // for Firefox
+            main.appendChild(canvas);
+
+            // for Safari
+            // canvas.toBlob(function(blob) {
+            //   var newImg = document.createElement('img'),
+            //       url = URL.createObjectURL(blob);
+              
+            //   newImg.onload = function() {
+            //     URL.revokeObjectURL(url);
+            //   };
+
+            //   newImg.src = url;
+            //   newImg.title = "some title";
+            //   newImg.alt = "some alternative text";
+            //   main.appendChild(newImg);
+            // });
+        });
+    }
+</script>
 
 </body>
 

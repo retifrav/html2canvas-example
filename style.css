@@ -13,32 +13,21 @@
     src: url("fonts/opensans-extra.ttf") format("opentype");
 }
 
-body {
-    font-family: Verdana;
-    color: #ffffff;
-}
-
 .img-responsive {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-div.rating-item {
-    width: 142px;
-    height: 122px;
-    margin: auto;
-}
 span.rating-text {
     font-family: Boho;
     font-size: 72px;
 }
-span.rating-type {
+.rating-type {
     font-family: OpenSansSemi;
     font-size: 16px;
-}
-div.rating-type {
     margin-top: 13px;
+    color: #FFFFFF;
 }
 span.rating-girl {
     color: #FF5792;
@@ -50,14 +39,13 @@ span.rating-expert {
     color: #DADADA;
 }
 
-span.verdict {
+.verdict {
     font-family: OpenSansExtra;
     font-size: 24px;
     color: #121212;
     letter-spacing: -1px;
-    line-height: 1
-}
-div.verdict {
+    line-height: 1;
+    /* html2canvas does not support gradients
     background: repeating-linear-gradient(
       315deg,
       #CBCBCB,
@@ -65,4 +53,6 @@ div.verdict {
       #FEFEFE 12px,
       #FEFEFE 24px
     );
+    */
+    background-image: url("images/verdict-back.png");
 }
