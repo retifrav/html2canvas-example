@@ -1,16 +1,10 @@
 @font-face {
-    font-family: "Boho";
-    src: url("fonts/boho-a-gogo.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "OpenSansSemi";
-    src: url("fonts/opensans-semi.ttf") format("opentype");
-}
-
-@font-face {
-    font-family: "OpenSansExtra";
-    src: url("fonts/opensans-extra.ttf") format("opentype");
+    font-family: 'Boho';
+    src: url('fonts/BohoAGogoNF.woff2') format('woff2'),
+        url('fonts/BohoAGogoNF.woff') format('woff'),
+        url('fonts/BohoAGogoNF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .img-responsive {
@@ -24,7 +18,8 @@ span.rating-text {
     font-size: 72px;
 }
 .rating-type {
-    font-family: OpenSansSemi;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     margin-top: 13px;
     color: #FFFFFF;
@@ -40,7 +35,8 @@ span.rating-expert {
 }
 
 .verdict {
-    font-family: OpenSansExtra;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     font-size: 24px;
     color: #121212;
     letter-spacing: -1px;
@@ -54,5 +50,6 @@ span.rating-expert {
       #FEFEFE 24px
     );
     */
-    background-image: url("images/verdict-back.png");
+    background-image: url("images/verdict-back.svg");
 }
+
