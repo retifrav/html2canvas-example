@@ -51,5 +51,6 @@ span.rating-expert {
     );
     */
     background-image: url("images/verdict-back.svg");
+    background-size: contain;
 }
 
