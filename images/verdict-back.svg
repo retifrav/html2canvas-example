@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="144px" viewBox="0 0 360 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>verdict__bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="instagram-5" transform="translate(-720.000000, -936.000000)">
+            <g id="verdict" transform="translate(720.000000, 936.000000)">
+                <g id="verdict__bg">
+                    <rect id="verdict__bg-fill" fill="#FEFEFE" x="0" y="0" width="360" height="144"></rect>
+                    <path d="M115.791847,0 L151.147186,0 L7.14718626,144 L0,144 L0,115.791847 L115.791847,0 Z M81.8507217,1.42108547e-14 L0,81.8507217 L0,47.9095962 L47.9095962,0 L81.8507217,0 Z M360,96.6173157 L360,130.558441 L346.558441,144 L312.617316,144 L360,96.6173157 Z M360,62.6761902 L278.67619,144 L244.735065,144 L360,28.7350647 L360,62.6761902 Z M320.852814,0 L354.793939,0 L210.793939,144 L176.852814,144 L320.852814,5.68434189e-14 Z M286.911688,5.68434189e-14 L142.911688,144 L108.970563,144 L252.970563,0 L286.911688,0 Z M185.088312,0 L219.029437,0 L75.0294373,144 L41.0883118,144 L185.088312,0 Z M13.9684707,-1.77635684e-15 L-2.84217094e-14,13.9684707 L0,0 L13.9684707,0 Z" id="verdict__bg-stripes" fill="#CBCBCB"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
