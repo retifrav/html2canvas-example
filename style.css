@@ -32,7 +32,7 @@
 }
 
 span.rating-text {
-    font-family: Boho;
+    font-family: 'Boho', sans-serif;
     font-size: 72px;
 }
 .rating-type {
