@@ -59,7 +59,11 @@ span.rating-expert {
     color: #121212;
     letter-spacing: -1px;
     line-height: 1;
-    /* html2canvas does not support gradients
+
+    background-image: url("images/verdict-back.svg");
+    background-size: contain;
+
+    /* html2canvas does not support that
     background: repeating-linear-gradient(
       315deg,
       #CBCBCB,
@@ -68,7 +72,21 @@ span.rating-expert {
       #FEFEFE 24px
     );
     */
-    background-image: url("images/verdict-back.svg");
-    background-size: contain;
+
+    /* supported light */
+    /*
+    background: #cbcbcb;
+    background: -moz-linear-gradient(-45deg, #cbcbcb 0%, #cbcbcb 10%, #fefefe 10%, #fefefe 20%, #cbcbcb 20%, #cbcbcb 30%, #fefefe 30%, #fefefe 40%, #cbcbcb 40%, #cbcbcb 50%, #fefefe 50%, #fefefe 60%, #cbcbcb 60%, #cbcbcb 70%, #fefefe 70%, #fefefe 80%, #cbcbcb 80%, #cbcbcb 90%, #fefefe 90%, #fefefe 100%);
+    background: -webkit-linear-gradient(-45deg, #cbcbcb 0%,#cbcbcb 10%,#fefefe 10%,#fefefe 20%,#cbcbcb 20%,#cbcbcb 30%,#fefefe 30%,#fefefe 40%,#cbcbcb 40%,#cbcbcb 50%,#fefefe 50%,#fefefe 60%,#cbcbcb 60%,#cbcbcb 70%,#fefefe 70%,#fefefe 80%,#cbcbcb 80%,#cbcbcb 90%,#fefefe 90%,#fefefe 100%);
+    background: linear-gradient(135deg, #cbcbcb 0%,#cbcbcb 10%,#fefefe 10%,#fefefe 20%,#cbcbcb 20%,#cbcbcb 30%,#fefefe 30%,#fefefe 40%,#cbcbcb 40%,#cbcbcb 50%,#fefefe 50%,#fefefe 60%,#cbcbcb 60%,#cbcbcb 70%,#fefefe 70%,#fefefe 80%,#cbcbcb 80%,#cbcbcb 90%,#fefefe 90%,#fefefe 100%);
+    */
+
+    /* supported dark */
+    /*
+    background: #3e3e3e;
+    background: -moz-linear-gradient(-45deg, #3e3e3e 0%, #3e3e3e 10%, #292929 10%, #292929 20%, #3e3e3e 20%, #3e3e3e 30%, #292929 30%, #292929 40%, #3e3e3e 40%, #3e3e3e 50%, #292929 50%, #292929 60%, #3e3e3e 60%, #3e3e3e 70%, #292929 70%, #292929 80%, #3e3e3e 80%, #3e3e3e 90%, #292929 90%, #292929 100%);
+    background: -webkit-linear-gradient(-45deg, #3e3e3e 0%,#3e3e3e 10%,#292929 10%,#292929 20%,#3e3e3e 20%,#3e3e3e 30%,#292929 30%,#292929 40%,#3e3e3e 40%,#3e3e3e 50%,#292929 50%,#292929 60%,#3e3e3e 60%,#3e3e3e 70%,#292929 70%,#292929 80%,#3e3e3e 80%,#3e3e3e 90%,#292929 90%,#292929 100%);
+    background: linear-gradient(135deg, #3e3e3e 0%,#3e3e3e 10%,#292929 10%,#292929 20%,#3e3e3e 20%,#3e3e3e 30%,#292929 30%,#292929 40%,#3e3e3e 40%,#3e3e3e 50%,#292929 50%,#292929 60%,#3e3e3e 60%,#3e3e3e 70%,#292929 70%,#292929 80%,#3e3e3e 80%,#3e3e3e 90%,#292929 90%,#292929 100%);
+    */
 }
 
