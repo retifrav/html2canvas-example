@@ -6,71 +6,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>test</title>
-
+  
   <link rel="stylesheet" href="style.css">
-
   <script src="html2canvas.min.js"></script>
-
 </head>
 
 <body>
 
-<div id="main">
-<div id="screenshot" style="width:540px; background-color:#121212; display:flex; cursor:pointer;" onclick="makeScreenshot();">
-  <div style="width:360px;">
-      <img class="img-responsive" style="width:100%;" src="images/poster.jpg">
+  <div style="font-size:150%;">
+      <a id="a-make" href="#">Make a screenshot</a>
+      <a id="a-download" href="#" style="display:none;">Download a screenshot</a>
   </div>
-  <div style="width:180px; text-align:center;">
-      <div style="height:468px;">
-          <div style="padding-top:18px;">
-            <div><span class="rating-text rating-girl">5,4</span></div>
-            <div class="rating-type">женский&nbsp;рейтинг</div>
-          </div>
-          <div style="margin-top:20px;">
-            <div><span class="rating-text rating-boy">7,6</span></div>
-            <div class="rating-type">мужской&nbsp;рейтинг</div>
-          </div>
-          <div style="margin-top:20px;">
-            <div><span class="rating-text rating-expert">9,8</span></div>
-            <div class="rating-type">мнение&nbsp;экспертов</div>
-          </div>
-      </div>
-      <div class="verdict some" style="height:72px; display:flex; align-items:center; justify-content:center;">
-        можно смотреть
-      </div>
+
+  <div id="main" style="margin-top:10px;">
+  <div id="screenshot" style="width:540px; background-color:#121212; display:flex;">
+    <div style="width:360px;">
+        <img class="img-responsive" style="width:100%;" src="images/poster.jpg">
+    </div>
+    <div style="width:180px; text-align:center;">
+        <div style="height:468px;">
+            <div style="padding-top:18px;">
+              <div><span class="rating-text rating-girl">5,4</span></div>
+              <div class="rating-type">женский&nbsp;рейтинг</div>
+            </div>
+            <div style="margin-top:20px;">
+              <div><span class="rating-text rating-boy">7,6</span></div>
+              <div class="rating-type">мужской&nbsp;рейтинг</div>
+            </div>
+            <div style="margin-top:20px;">
+              <div><span class="rating-text rating-expert">9,8</span></div>
+              <div class="rating-type">мнение&nbsp;экспертов</div>
+            </div>
+        </div>
+        <div class="verdict some" style="height:72px; display:flex; align-items:center; justify-content:center;">
+          можно смотреть
+        </div>
+    </div>
   </div>
-</div>
-</div>
+  </div>
 
-<script>
+  <script>
+      function makeScreenshot()
+      {
+          html2canvas(document.getElementById("screenshot"), {scale: 2}).then(canvas =>
+          {
+              canvas.id = "canvasID";
+              var main = document.getElementById("main");
+              while (main.firstChild) { main.removeChild(main.firstChild); }
+              main.appendChild(canvas);
+          });
+      }
 
-    function makeScreenshot() {
-        html2canvas(document.getElementById("screenshot"), {scale: 2}).then(canvas => {
-            var main = document.getElementById("main");
-            while (main.firstChild) {
-              main.removeChild(main.firstChild);
-            }
+      document.getElementById("a-make").addEventListener('click', function()
+      {
+          document.getElementById("a-make").style.display = "none";
+          makeScreenshot();
+          document.getElementById("a-download").style.display = "inline";
+      }, false);
 
-            // for Firefox
-            main.appendChild(canvas);
-
-            // for Safari
-            // canvas.toBlob(function(blob) {
-            //   var newImg = document.createElement('img'),
-            //       url = URL.createObjectURL(blob);
-              
-            //   newImg.onload = function() {
-            //     URL.revokeObjectURL(url);
-            //   };
-
-            //   newImg.src = url;
-            //   newImg.title = "some title";
-            //   newImg.alt = "some alternative text";
-            //   main.appendChild(newImg);
-            // });
-        });
-    }
-</script>
+      document.getElementById("a-download").addEventListener('click', function()
+      {
+          this.href = document.getElementById("canvasID").toDataURL();
+          this.download = "canvas-image.png";
+      }, false);
+  </script>
 
 </body>
 
